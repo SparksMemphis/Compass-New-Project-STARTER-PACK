@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*
+ *	Version: 1.0
+ *	Author: Archer Malmo
+ *	Author URI: http://archermalmo.com
+ */
+
+	// import compass plugins
+	@import "compass";
+	@import "compass/css3";
+	@import "compass/typography";
+	@import "compass/utilities";
+
+	// define variables
+	$lightGrey: #d2d2d2;
+	$mediumGrey: #828282;
+	$darkGrey: #424242;
+	$blue: #374a97;
+	$green: #40ae49;
+	$gold: #ffd400;
+	$fontFamily: Arial, Helvetica, sans-serif;
+
+	// set up mixins
+	@mixin zeroOut {
+		margin:0;
+		padding:0;}
+
+	@mixin clearfloat {
+		clear:both;
+		height:0;
+		font-size: 1px;
+		line-height: 0px;}
+	
+	@mixin floatWrap {
+		display:block;
+		overflow:auto;}
+
+	// set up global classes
+	.last {margin-left: 0; margin-right:0;}
